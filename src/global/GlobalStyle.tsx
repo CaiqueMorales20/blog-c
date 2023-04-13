@@ -12,8 +12,12 @@ export const GlobalStyle = createGlobalStyle`
   }
   body{
     font-family: 'Roboto Mono', monospace;
-    background-color: #262626;
+    background-color: #292d35;
     color: #ffffff;
+  }
+  input{
+    outline: none;
+    border: none;
   }
 `;
 
