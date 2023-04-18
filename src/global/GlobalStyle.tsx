@@ -4,6 +4,11 @@ import styled from "styled-components";
 
 // Global Style
 export const GlobalStyle = createGlobalStyle`
+  // CSS Variables
+  :root{
+    --header-height: 5rem;
+  }
+
   // Reseting HTML
   *{
     padding: 0;

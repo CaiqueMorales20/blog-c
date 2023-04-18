@@ -6,13 +6,10 @@ import { BsSearch } from "react-icons/bs";
 
 // Styled Components
 export const InputContainer = styled.div`
-	display: grid;
+	position: relative;
+	display: flex;
 	align-items: center;
-
-	& > * {
-		grid-column: 1 / -1;
-		grid-row: 1 / -1;
-	}
+	width: min(45rem, 100%);
 `;
 
 export const InputS = styled.input`
@@ -21,10 +18,11 @@ export const InputS = styled.input`
 	border-radius: 4em;
 	height: 2.5rem;
 	padding-inline: 3em 2em;
-	width: 45rem;
+	width: 100%;
 
 	&::placeholder {
-		font-size: 0.9rem;
+		font-size: 0.8;
+		font-weight: 500;
 		color: #fefefe;
 		letter-spacing: 0.5px;
 	}
@@ -33,5 +31,5 @@ export const InputS = styled.input`
 export const InputIcon = styled(BsSearch)`
 	color: #e2d8d8;
 	transform: translateX(1em);
-	z-index: 2;
+	position: absolute;
 `;

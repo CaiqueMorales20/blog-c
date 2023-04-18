@@ -10,8 +10,9 @@ export const HeaderS = styled.header`
 export const HeaderContent = styled.div`
 	width: min(1440px, 80%);
 	margin-inline: auto;
-	height: 5rem;
+	height: var(--header-height);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	gap: 1em;
 `;
