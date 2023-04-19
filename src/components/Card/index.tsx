@@ -1,9 +1,28 @@
+// Styled Components
+import {
+	CardS,
+	CardBackground,
+	CardText,
+	CardTitle,
+	CardDescription,
+} from "./style";
+
+// Types
+import { CardProps } from "./types";
+
 // Functional Components
-export const Card = () => {
+export const Card = (props: CardProps) => {
 	// Rendering
 	return (
-		<>
-			<p>Card</p>
-		</>
+		<CardS href="" style={{ backgroundImage: `url(${props.bg})` }}>
+			<CardText>
+				<CardTitle>Titulo da noticia.</CardTitle>
+				<CardDescription>
+					Descrição sobre a noticias falando altas coisas. Descrição sobre a
+					noticias falando altas coisas. Descrição sobre a noticias falando
+					altas coisas.
+				</CardDescription>
+			</CardText>
+		</CardS>
 	);
 };

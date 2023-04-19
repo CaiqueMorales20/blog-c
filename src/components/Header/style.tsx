@@ -14,5 +14,9 @@ export const HeaderContent = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 1em;
+	gap: 2em;
+`;
+
+export const Logo = styled.a`
+	font-size: var(--fz-large);
 `;

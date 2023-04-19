@@ -9,7 +9,11 @@ export const InputContainer = styled.div`
 	position: relative;
 	display: flex;
 	align-items: center;
-	width: min(45rem, 100%);
+	width: min(40rem, 100%);
+
+	@media screen and (max-width: 768px) {
+		justify-self: flex-end;
+	}
 `;
 
 export const InputS = styled.input`
@@ -25,6 +29,10 @@ export const InputS = styled.input`
 		font-weight: 500;
 		color: #fefefe;
 		letter-spacing: 0.5px;
+	}
+
+	&:focus {
+		outline: 1px solid #fafafa;
 	}
 `;
 

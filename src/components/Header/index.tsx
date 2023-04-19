@@ -1,6 +1,9 @@
-// Styled Components
+// Imported Components
 import { Input } from "./components/Input";
-import { HeaderContent, HeaderS } from "./style";
+import { Menu } from "./components/Menu";
+
+// Styled Components
+import { HeaderContent, HeaderS, Logo } from "./style";
 
 // Functional Component
 export const Header = () => {
@@ -8,11 +11,10 @@ export const Header = () => {
 	return (
 		<HeaderS>
 			<HeaderContent>
-				<p>Blog C</p>
-				<Input placeholder="Search" />
-				<p>Menu</p>
+				<Logo>BlogC</Logo>
+				<Input placeholder="Procurar notícias" />
+				<Menu />
 			</HeaderContent>
 		</HeaderS>
 	);
 };
-

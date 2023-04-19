@@ -4,12 +4,32 @@ import styled from "styled-components";
 
 // Global Style
 export const GlobalStyle = createGlobalStyle`
-  // CSS Variables
+  // ==================== CSS Variables  ==================== //
   :root{
-    --header-height: 5rem;
+    // Sizes
+    --header-height: 6rem;
+
+    // Typography
+    --fz-largest: 2.488rem;
+    --fz-larger: 1.628rem;
+    --fz-large: 1.34rem;
+    --fz-normal: .93rem;
+    --fz-small: 0.833rem;
+    --fz-smaller: 0.694rem;
+    --fz-smallest: 0.579rem;
+    
+    @media screen and (max-width: 768px) {
+      --fz-largest: 1.988rem;
+      --fz-larger: 1.428rem;
+      --fz-large: 1.14rem;
+      --fz-normal: .73rem;
+      --fz-small: 0.633rem;
+      --fz-smaller: 0.594rem;
+      --fz-smallest: 0.479rem;
+    }
   }
 
-  // Reseting HTML
+   // ==================== Reseting HTML  ==================== //
   *{
     padding: 0;
     margin: 0;
@@ -18,11 +38,16 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Roboto Mono', monospace;
     background-color: #292d35;
+    line-height: 1.6;
     color: #ffffff;
   }
   input{
     outline: none;
     border: none;
+  }
+  a{
+    display: inline-block;
+    text-decoration: none;
   }
 `;
 
