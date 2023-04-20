@@ -10,12 +10,8 @@ export const Card = (props: CardProps) => {
 	return (
 		<CardS href="" style={{ backgroundImage: `url(${props.bg})` }}>
 			<CardText>
-				<CardTitle>Titulo da noticia.</CardTitle>
-				<CardDescription>
-					Descrição sobre a noticias falando altas coisas. Descrição sobre a
-					noticias falando altas coisas. Descrição sobre a noticias falando
-					altas coisas.
-				</CardDescription>
+				<CardTitle>{props.title}</CardTitle>
+				<CardDescription>{props.description}</CardDescription>
 			</CardText>
 		</CardS>
 	);

@@ -24,7 +24,8 @@ export const CardS = styled.a`
 		outline: 1px solid #fafafa;
 	}
 
-	&:hover {
+	&:hover,
+	&:focus {
 		background-size: 110% 110%;
 	}
 `;
