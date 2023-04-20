@@ -19,4 +19,5 @@ export const HeaderContent = styled.div`
 
 export const Logo = styled.a`
 	font-size: var(--fz-large);
+	color: #fff;
 `;
