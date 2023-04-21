@@ -13,20 +13,20 @@ export const CardS = styled.a`
 	min-height: 20rem;
 	overflow: hidden;
 	background-size: 100% 100%;
-	transition: all.5s;
 
 	& > * {
 		grid-column: 1 / -1;
 		grid-row: 1 / -1;
 	}
 
-	&:focus {
-		outline: 1px solid #fafafa;
-	}
-
 	&:hover,
 	&:focus {
 		background-size: 110% 110%;
+	}
+
+	&:hover > * > *,
+	&:focus > * > * {
+		transform: translateY(-0.5rem);
 	}
 `;
 

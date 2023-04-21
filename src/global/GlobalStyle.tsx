@@ -34,6 +34,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    transition: all.5s;
+  }
+  *:focus{
+    outline: 1px solid #fafafa;
+  }
   }
   body{
     font-family: 'Roboto Mono', monospace;
