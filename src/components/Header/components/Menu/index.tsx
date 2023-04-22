@@ -5,10 +5,7 @@ import { useState, useEffect } from "react";
 import { MenuItem } from "./components/MenuItem";
 
 // Styled Components
-import { MenuS } from "./style";
-
-// Icons
-import { CgMenu as HambugerIcon } from "react-icons/cg";
+import { MenuS, Hamburger } from "./style";
 
 // Functional Component
 export const Menu = () => {
@@ -26,7 +23,7 @@ export const Menu = () => {
 	return (
 		<MenuS>
 			{mobile < 768 ? (
-				<HambugerIcon />
+				<Hamburger />
 			) : (
 				<>
 					<MenuItem link="" text="Home" />

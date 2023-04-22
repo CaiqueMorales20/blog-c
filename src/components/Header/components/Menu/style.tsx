@@ -1,6 +1,8 @@
 // Imports
 import styled from "styled-components";
 
+import { Menu } from "@styled-icons/entypo/Menu";
+
 // Styled Components
 export const MenuS = styled.ul`
 	display: flex;
@@ -21,4 +23,8 @@ export const MenuS = styled.ul`
 		align-items: center;
 		justify-content: center;
 	}
+`;
+
+export const Hamburger = styled(Menu)`
+	width: 40px;
 `;
