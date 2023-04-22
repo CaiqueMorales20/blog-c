@@ -1,14 +1,39 @@
+// Imports
+import { useState, useEffect } from "react";
+
+// Imported Components
+import { MenuItem } from "./components/MenuItem";
+
 // Styled Components
-import { MenuS, MenuLink } from "./style";
+import { MenuS } from "./style";
+
+// Icons
+import { CgMenu as HambugerIcon } from "react-icons/cg";
 
 // Functional Component
 export const Menu = () => {
+	// Variables
+	const [mobile, setMobile] = useState<number>(0);
+
+	// Functions
+	useEffect(() => {
+		window.addEventListener("resize", () => {
+			setMobile(window.innerWidth);
+		});
+	});
+
 	// Rendering
 	return (
 		<MenuS>
-			<MenuLink href="">Home</MenuLink>
-			<MenuLink href="">CSS</MenuLink>
-			<MenuLink href="">React</MenuLink>
+			{mobile < 768 ? (
+				<HambugerIcon />
+			) : (
+				<>
+					<MenuItem link="" text="Home" />
+					<MenuItem link="" text="CSS" />
+					<MenuItem link="" text="React " />
+				</>
+			)}
 		</MenuS>
 	);
 };

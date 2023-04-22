@@ -12,7 +12,7 @@ export const InputContainer = styled.div`
 	width: min(40rem, 100%);
 
 	@media screen and (max-width: 768px) {
-		justify-self: flex-end;
+		display: none;
 	}
 `;
 

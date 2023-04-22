@@ -27,6 +27,12 @@ export const GlobalStyle = createGlobalStyle`
       --fz-smaller: 0.594rem;
       --fz-smallest: 0.479rem;
     }
+
+    // Z-index
+    --z-1: 1
+    --z-2: 2
+    --z-3: 3
+    --z-4: 999
   }
 
    // ==================== Reseting HTML  ==================== //
@@ -34,11 +40,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition: all.5s;
   }
   *:focus{
     outline: 1px solid #fafafa;
-  }
   }
   body{
     font-family: 'Roboto Mono', monospace;
@@ -46,9 +50,15 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.6;
     color: #ffffff;
   }
+  body * {
+    transition: all.5s;
+  }
   input{
     outline: none;
     border: none;
+  }
+  ul{
+    list-style: none;
   }
   a{
     display: inline-block;
@@ -56,6 +66,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// Styled Components
 export const PageContainer = styled.main`
 	width: min(1440px, 80%);
 	margin-inline: auto;
