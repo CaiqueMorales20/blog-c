@@ -26,5 +26,5 @@ export const MenuS = styled.ul`
 `;
 
 export const Hamburger = styled(Menu)`
-	width: 40px;
+	width: 1.5rem;
 `;
