@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 // Imported Icons
-import { BsSearch } from "react-icons/bs";
+import { SearchAlt2 } from "@styled-icons/boxicons-regular/SearchAlt2";
 
 // Styled Components
 export const InputContainer = styled.div`
@@ -14,6 +14,13 @@ export const InputContainer = styled.div`
 	@media screen and (max-width: 768px) {
 		display: none;
 	}
+`;
+
+export const InputIcon = styled(SearchAlt2)`
+	width: 1.25rem;
+	color: #e2d8d8;
+	transform: translateX(1em);
+	position: absolute;
 `;
 
 export const InputS = styled.input`
@@ -30,14 +37,4 @@ export const InputS = styled.input`
 		color: #fefefe;
 		letter-spacing: 0.5px;
 	}
-
-	&:focus {
-		outline: 1px solid #fafafa;
-	}
-`;
-
-export const InputIcon = styled(BsSearch)`
-	color: #e2d8d8;
-	transform: translateX(1em);
-	position: absolute;
 `;

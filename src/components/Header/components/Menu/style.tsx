@@ -1,10 +1,12 @@
 // Imports
 import styled from "styled-components";
 
-import { Menu } from "@styled-icons/entypo/Menu";
+// Types
+export type MenuProps = {
+	opened: boolean;
+};
 
-// Styled Components
-export const MenuS = styled.ul`
+export const MenuS = styled.ul<MenuProps>`
 	display: flex;
 	gap: 1em;
 
@@ -17,14 +19,23 @@ export const MenuS = styled.ul`
 		width: 70vw;
 		height: 100vh;
 		z-index: 999;
+		transform: ${(props) => (props.opened ? "0%" : "translateX(100%)")};
 
 		// Style
 		background-color: #363c47;
 		align-items: center;
 		justify-content: center;
-	}
-`;
+		flex-direction: column;
 
-export const Hamburger = styled(Menu)`
-	width: 1.5rem;
+		// Position of HamburgerBtn
+		& > *:first-child {
+			position: absolute;
+			top: 0;
+			right: 10vw;
+			height: var(--header-height);
+
+			display: flex;
+			align-items: center;
+		}
+	}
 `;
