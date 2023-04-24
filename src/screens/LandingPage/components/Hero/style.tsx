@@ -17,7 +17,7 @@ export const HeroContent = styled.div`
 		grid-row: span 2;
 	}
 
-	@media screen and (width < 1080px) {
+	@media screen and (max-width: 1080px) {
 		grid-template-columns: 1fr;
 	}
 `;
