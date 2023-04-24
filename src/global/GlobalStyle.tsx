@@ -52,6 +52,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body * {
     transition: all.5s;
+    -webkit-tap-highlight-color: transparent;
   }
   input{
     outline: none;

@@ -9,7 +9,7 @@ export const HamburgerBtn = (props: HamburgerBtnProps) => {
 	// Rendering
 	return (
 		<HamburgerContainer onClick={props.onClick}>
-			<HamburgerIcon />
+			<HamburgerIcon title={props.title} />
 		</HamburgerContainer>
 	);
 };

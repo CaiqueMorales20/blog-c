@@ -4,6 +4,10 @@ import styled from "styled-components";
 // Styled Components
 export const HeroS = styled.section`
 	margin-top: 6rem;
+
+	@media screen and (max-width: 1080px) {
+		margin-top: 1rem;
+	}
 `;
 
 export const HeroContent = styled.div`

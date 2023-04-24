@@ -42,9 +42,14 @@ export const Menu = () => {
 	// Rendering
 	return (
 		<>
-			{mobile < 768 && <HamburgerBtn onClick={() => setOpenedMenu(true)} />}
+			{mobile < 768 && (
+				<HamburgerBtn title="Abrir menu" onClick={() => setOpenedMenu(true)} />
+			)}
 			<MenuS ref={wrapperRef} opened={openedMenu}>
-				<HamburgerBtn onClick={() => setOpenedMenu(false)} />
+				<HamburgerBtn
+					title="Fechar menu"
+					onClick={() => setOpenedMenu(false)}
+				/>
 				<MenuItem link="" text="Home" />
 				<MenuItem link="" text="CSS" />
 				<MenuItem link="" text="React " />
