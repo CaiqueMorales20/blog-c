@@ -3,10 +3,13 @@ import styled from "styled-components";
 
 // Styled Components
 export const HeroS = styled.section`
-	margin-top: 6rem;
+	--mt: 6rem;
+
+	margin-top: var(--mt);
+	min-height: calc(100vh - var(--header-height) - 6rem);
 
 	@media screen and (max-width: 1080px) {
-		margin-top: 1rem;
+		--mt: 1rem;
 	}
 `;
 
