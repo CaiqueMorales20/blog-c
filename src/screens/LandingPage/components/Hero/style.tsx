@@ -6,7 +6,7 @@ export const HeroS = styled.section`
 	--mt: 6rem;
 
 	margin-top: var(--mt);
-	min-height: calc(100vh - var(--header-height) - 6rem);
+	min-height: calc(100vh - var(--header-height) - var(--mt));
 
 	@media screen and (max-width: 1080px) {
 		--mt: 1rem;

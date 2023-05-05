@@ -1,9 +1,12 @@
+// Styled Components
+import { NewsS } from "./style";
+
 // Functional Components
 export const News = () => {
 	// Rendering
 	return (
-		<>
-			<p>Teste</p>
-		</>
+		<NewsS>
+			<p>News</p>
+		</NewsS>
 	);
 };
