@@ -7,7 +7,8 @@ export const NewsCardS = styled.div`
 	justify-content: center;
 	flex-direction: column;
 	width: 100%;
-	align-items: center;
+	border-radius: 0.5em;
+	overflow: hidden;
 `;
 
 export const ImageS = styled.img`
@@ -18,4 +19,14 @@ export const TextContainer = styled.div`
 	background-color: #353a46;
 	width: 100%;
 	padding: 1em 3em;
+
+	@media screen and (min-width: 1080px) {
+		min-height: 5rem;
+	}
+`;
+
+export const TextS = styled.h3`
+	color: #efefef;
+	font-size: var(--fz-small);
+	font-weight: 400;
 `;

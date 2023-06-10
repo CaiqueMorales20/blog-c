@@ -14,7 +14,7 @@ export const News = () => {
 			<NewsContent>
 				{HeroData.map((item, index) => {
 					// Rendering
-					return <NewsCard />;
+					return <NewsCard name={item.title} />;
 				})}
 			</NewsContent>
 		</NewsS>

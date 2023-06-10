@@ -18,8 +18,12 @@ export const NewsS = styled.div`
 export const NewsContent = styled.div`
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	gap: 1em;
+	gap: 2em;
 	width: 100%;
+
+	@media screen and (max-width: 1080px) {
+		grid-template-columns: 1fr;
+	}
 `;
 
 export const TitleS = styled.h2`

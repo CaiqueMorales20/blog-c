@@ -1,17 +1,18 @@
 // Styled Components
-import { ImageS, NewsCardS, TextContainer } from "./style";
+import { ImageS, NewsCardS, TextContainer, TextS } from "./style";
 
 // Image
 import Img from "../../assets/img/teste.svg";
+import { NewsCardProps } from "./types";
 
 // Functional Component
-export const NewsCard = () => {
+export const NewsCard = (props: NewsCardProps) => {
 	// Rendering
 	return (
 		<NewsCardS>
 			<ImageS src={Img} />
 			<TextContainer>
-				<p>Focando em patterns no React</p>
+				<TextS>{props.name}</TextS>
 			</TextContainer>
 		</NewsCardS>
 	);
