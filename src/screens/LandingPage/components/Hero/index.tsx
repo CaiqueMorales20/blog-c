@@ -1,5 +1,8 @@
+// Imports
+import { useState } from "react";
+
 // Imported COmponents
-import { Card } from "../../../../components/Card";
+import { Card } from "./components/Card";
 
 // Styled Components
 import { HeroContent, HeroS } from "./style";
@@ -9,11 +12,14 @@ import { HeroData } from "./data";
 
 // Functional Component
 export const Hero = () => {
+	// Variables
+	const lastNews = HeroData.slice(-3);
+
 	// Rendering
 	return (
 		<HeroS>
 			<HeroContent>
-				{HeroData.map((item, index) => {
+				{lastNews.map((item, index) => {
 					// Rendering
 					return (
 						<Card

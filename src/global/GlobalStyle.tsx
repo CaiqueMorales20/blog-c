@@ -58,6 +58,10 @@ export const GlobalStyle = createGlobalStyle`
     outline: none;
     border: none;
   }
+  img{
+    width: 100%;
+    height: auto;
+  }
   ul{
     list-style: none;
   }

@@ -7,7 +7,7 @@ export const CardS = styled.a`
 	background: #cacaca;
 	color: #262626;
 	z-index: 2;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
 	display: grid;
 	align-items: flex-end;
 	min-height: 20rem;
@@ -39,7 +39,7 @@ export const CardText = styled.div`
 	padding: 5%;
 	background: linear-gradient(
 		hsl(0 0% 0% / 0),
-		hsl(20 0% 0% / 0.3) 50%,
+		hsl(20 0% 0% / 0.3) 30%,
 		hsl(0 0% 0% / 1)
 	);
 `;
