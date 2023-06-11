@@ -9,10 +9,21 @@ export const NewsCardS = styled.div`
 	width: 100%;
 	border-radius: 0.5em;
 	overflow: hidden;
+	cursor: pointer;
+`;
+
+export const ImageContainer = styled.div`
+	width: 100%;
+	aspect-ratio: 2 / 1;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 `;
 
 export const ImageS = styled.img`
-	width: 100%;
+	&:hover {
+		scale: 1.05;
+	}
 `;
 
 export const TextContainer = styled.div`

@@ -24,6 +24,15 @@ export const NewsContent = styled.div`
 	@media screen and (max-width: 1080px) {
 		grid-template-columns: 1fr;
 	}
+
+	// Card Animation
+	&:has(*:hover) > * {
+		opacity: 0.6;
+	}
+
+	& > *:hover {
+		opacity: 1;
+	}
 `;
 
 export const TitleS = styled.h2`
