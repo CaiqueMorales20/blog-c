@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     --header-height: 6rem;
 
     // Typography
-    --fz-largest: 2.488rem;
+    --fz-largest: 2.788rem;
     --fz-larger: 1.628rem;
     --fz-large: 1.34rem;
     --fz-normal: .93rem;
@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     --fz-smallest: 0.579rem;
     
     @media screen and (max-width: 768px) {
-      --fz-largest: 1.988rem;
+      --fz-largest: 2.2588rem;
       --fz-larger: 1.428rem;
       --fz-large: 1.14rem;
       --fz-normal: .73rem;
@@ -45,13 +45,13 @@ export const GlobalStyle = createGlobalStyle`
     outline: 1px solid #fafafa;
   }
   body{
-    font-family: 'Roboto Mono', monospace;
     background-color: #292d35;
-    line-height: 1.6;
-    color: #ffffff;
   }
   body * {
+    line-height: 1.6;
+    color: #ffffff;
     transition: all.5s;
+    font-family: 'Roboto Mono', monospace;
     -webkit-tap-highlight-color: transparent;
   }
   input{
