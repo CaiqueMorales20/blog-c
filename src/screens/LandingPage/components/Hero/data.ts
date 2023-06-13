@@ -1,5 +1,5 @@
 // Images
-import bg1 from "../../../../assets/img/teste.svg";
+import bg1 from "../../../../assets/img/responsive.png";
 
 // Data
 export const HeroData = [
