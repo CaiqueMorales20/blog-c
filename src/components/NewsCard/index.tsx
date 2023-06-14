@@ -17,7 +17,7 @@ export const NewsCard = (props: NewsCardProps) => {
 	return (
 		<NewsCardS>
 			<ImageContainer>
-				<ImageS src={Img} />
+				<ImageS src={props.img} />
 			</ImageContainer>
 			<TextContainer>
 				<TextS>{props.name}</TextS>

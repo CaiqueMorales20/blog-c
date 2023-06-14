@@ -37,6 +37,6 @@ export const NewsContent = styled.div`
 
 export const TitleS = styled.h2`
 	color: #efefef;
-	font-size: 16px;
+	font-size: var(--fz-large);
 	font-weight: 400;
 `;

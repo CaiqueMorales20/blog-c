@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     // Typography
     --fz-largest: 2.788rem;
     --fz-larger: 1.628rem;
-    --fz-large: 1.34rem;
+    --fz-large: 1.14rem;
     --fz-normal: .93rem;
     --fz-small: 0.833rem;
     --fz-smaller: 0.694rem;
@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 768px) {
       --fz-largest: 2.2588rem;
       --fz-larger: 1.428rem;
-      --fz-large: 1.14rem;
+      --fz-large: 1.04rem;
       --fz-normal: .73rem;
       --fz-small: 0.633rem;
       --fz-smaller: 0.594rem;

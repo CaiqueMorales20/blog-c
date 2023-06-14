@@ -1,5 +1,5 @@
 // Imports
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 // Types
 export type MenuProps = {
@@ -26,6 +26,15 @@ export const MenuS = styled.ul<MenuProps>`
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+
+		&:before {
+			position: fixed;
+			inset: 0;
+			width: 100vw;
+			height: 100vh;
+			content: "";
+			background-color: #00000050;
+		}
 
 		// Position of HamburgerBtn
 		& > *:first-child {

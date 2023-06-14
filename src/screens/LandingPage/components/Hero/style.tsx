@@ -10,6 +10,7 @@ export const HeroS = styled.section`
 
 	@media screen and (max-width: 1080px) {
 		--mt: 1rem;
+		margin-bottom: 8em;
 	}
 `;
 
