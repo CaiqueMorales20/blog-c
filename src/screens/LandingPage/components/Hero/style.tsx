@@ -25,6 +25,15 @@ export const HeroContent = styled.div`
 		grid-row: span 2;
 	}
 
+	// Card Animation
+	&:has(*:hover) > * {
+		opacity: 0.6;
+	}
+
+	& > *:hover {
+		opacity: 1;
+	}
+
 	@media screen and (max-width: 1080px) {
 		grid-template-columns: 1fr;
 	}

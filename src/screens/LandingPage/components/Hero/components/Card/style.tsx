@@ -21,12 +21,12 @@ export const CardS = styled.a`
 
 	&:hover,
 	&:focus {
-		background-size: 110% 110%;
+		background-size: 105% 105%;
 	}
 
 	&:hover > * > *,
 	&:focus > * > * {
-		transform: translateY(-0.5rem);
+		transform: translateY(-0.25rem);
 	}
 `;
 
