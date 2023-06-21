@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
   // ==================== CSS Variables  ==================== //
   :root{
     // Sizes
-    --header-height: 6rem;
+    --header-height: 7rem;
 
     // Typography
     --fz-largest: 2.788rem;
