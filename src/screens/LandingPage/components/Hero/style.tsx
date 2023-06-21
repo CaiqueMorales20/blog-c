@@ -15,10 +15,13 @@ export const HeroS = styled.section`
 `;
 
 export const HeroContent = styled.div`
+	--columns-number: 2;
+	--rows-number: 2;
+
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-columns: repeat(var(--columns-number), 1fr);
+	grid-template-rows: repeat(var(--rows-number), 1fr);
 	gap: 2rem;
 
 	& > *:first-of-type {
@@ -35,6 +38,6 @@ export const HeroContent = styled.div`
 	}
 
 	@media screen and (max-width: 1080px) {
-		grid-template-columns: 1fr;
+		--columns-number: 1;
 	}
 `;

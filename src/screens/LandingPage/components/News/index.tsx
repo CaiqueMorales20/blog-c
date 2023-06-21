@@ -16,7 +16,7 @@ export const News = () => {
 			<NewsContent>
 				{NewsData.map((item, index) => {
 					// Rendering
-					return <NewsCard img={item.bg} name={item.title} />;
+					return <NewsCard img={item.bg} name={item.title} key={index} />;
 				})}
 			</NewsContent>
 		</NewsS>
