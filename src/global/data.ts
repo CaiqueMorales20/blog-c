@@ -1,8 +1,8 @@
 // Images
-import bg1 from "../../../../assets/img/setup.jpg";
+import bg1 from "../assets/img/setup.jpg";
 
 // Data
-export const HeroData = [
+export const NewsData = [
 	{
 		title: "Focando em patterns no React",
 		description:

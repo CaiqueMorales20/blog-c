@@ -8,12 +8,12 @@ import { Card } from "./components/Card";
 import { HeroContent, HeroS } from "./style";
 
 // Data
-import { HeroData } from "./data";
+import { NewsData } from "../../../../global/data";
 
 // Functional Component
 export const Hero = () => {
 	// Variables
-	const lastNews = HeroData.slice(-3);
+	const lastNews = NewsData.slice(-3);
 
 	// Rendering
 	return (

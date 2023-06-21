@@ -1,9 +1,11 @@
 // Imported Components
 import { NewsCard } from "../../../../components/NewsCard";
-import { HeroData } from "../Hero/data";
 
 // Styled Components
 import { NewsContent, NewsS, TitleS } from "./style";
+
+// Data
+import { NewsData } from "../../../../global/data";
 
 // Functional Components
 export const News = () => {
@@ -12,7 +14,7 @@ export const News = () => {
 		<NewsS>
 			<TitleS>Veja aqui meus útlimos posts </TitleS>
 			<NewsContent>
-				{HeroData.map((item, index) => {
+				{NewsData.map((item, index) => {
 					// Rendering
 					return <NewsCard img={item.bg} name={item.title} />;
 				})}
