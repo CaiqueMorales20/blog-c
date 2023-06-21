@@ -16,13 +16,15 @@ export const NewsS = styled.div`
 `;
 
 export const NewsContent = styled.div`
+	--columns-number: 3;
+
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(var(--columns-number), 1fr);
 	gap: 2em;
 	width: 100%;
 
 	@media screen and (max-width: 1080px) {
-		grid-template-columns: 1fr;
+		--columns-number: 1;
 	}
 
 	// Card Animation
