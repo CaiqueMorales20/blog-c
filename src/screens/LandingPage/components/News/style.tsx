@@ -29,7 +29,7 @@ export const NewsContent = styled.div`
 
 	// Card Animation
 	&:has(*:hover) > * {
-		opacity: 0.6;
+		opacity: 0.5;
 	}
 
 	& > *:hover {
