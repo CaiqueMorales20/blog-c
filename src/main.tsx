@@ -17,6 +17,7 @@ import { PageContainer } from "./global/GlobalStyle";
 import { LandingPage } from "./screens/LandingPage";
 import { CssPage } from "./screens/CssPage";
 import { ReactPage } from "./screens/ReactPage";
+import { Post } from "./screens/Post";
 
 // Router
 const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
 			{
 				path: "react",
 				element: <ReactPage />,
+			},
+			{
+				path: "post/:postId",
+				element: <Post />,
 			},
 		],
 	},
