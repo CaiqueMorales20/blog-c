@@ -1,9 +1,6 @@
 // Imports
 import styled from "styled-components";
 
-// Icons
-import { SearchAlt2 } from "@styled-icons/boxicons-regular/SearchAlt2";
-
 // Styled Components
 export const InputContainer = styled.div`
 	position: relative;
@@ -16,7 +13,7 @@ export const InputContainer = styled.div`
 	}
 `;
 
-export const InputIcon = styled(SearchAlt2)`
+export const InputIcon = styled.div`
 	width: 1.25rem;
 	color: #e2d8d8;
 	transform: translateX(1em);
