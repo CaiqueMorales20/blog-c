@@ -9,7 +9,7 @@ export const MenuItem = (props: MenuItemProps) => {
 	// Rendering
 	return (
 		<MenuItemS>
-			<MenuLink href={props.link}>{props.text}</MenuLink>
+			<MenuLink to={props.link}>{props.text}</MenuLink>
 		</MenuItemS>
 	);
 };

@@ -41,9 +41,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
-  *:focus{
-    outline: 1px solid #fafafa;
-  }
   body{
     background-color: #292d35;
   }

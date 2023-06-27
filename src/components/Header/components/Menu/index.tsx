@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 // Imported Components
 import { HamburgerBtn } from "../HamburgetBtn";
 import { MenuItem } from "./components/MenuItem";
+import { Link } from "react-router-dom";
 
 // Styled Components
 import { MenuS } from "./style";
@@ -50,9 +51,9 @@ export const Menu = () => {
 					title="Fechar menu"
 					onClick={() => setOpenedMenu(false)}
 				/>
-				<MenuItem link="" text="Home" />
-				<MenuItem link="" text="CSS" />
-				<MenuItem link="" text="React " />
+				<MenuItem link="/" text="Home" />
+				<MenuItem link="css" text="CSS" />
+				<MenuItem link="react" text="React" />
 			</MenuS>
 		</>
 	);
