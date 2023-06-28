@@ -27,15 +27,6 @@ export const MenuS = styled.ul<MenuProps>`
 		justify-content: center;
 		flex-direction: column;
 
-		&:before {
-			position: fixed;
-			inset: 0;
-			width: 100vw;
-			height: 100vh;
-			content: "";
-			background-color: #00000050;
-		}
-
 		// Position of HamburgerBtn
 		& > *:first-child {
 			position: absolute;

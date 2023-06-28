@@ -1,19 +1,22 @@
 // Imports
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, createContext } from "react";
 
 // Imported Components
 import { HamburgerBtn } from "../HamburgetBtn";
 import { MenuItem } from "./components/MenuItem";
-import { Link } from "react-router-dom";
 
 // Styled Components
 import { MenuS } from "./style";
+
+// Context
+export const MenuContext = createContext<MenuContextProps | null>(null);
+import { MenuContextProps } from "./types";
 
 // Functional Component
 export const Menu = () => {
 	// Variables
 	const [mobile, setMobile] = useState<number>(window.innerWidth);
-	const [openedMenu, setOpenedMenu] = useState<boolean>(false);
+	const [openedMenu, setOpenedMenu] = useState(false);
 	const wrapperRef = useRef(null);
 	useOutsideAlerter(wrapperRef);
 
@@ -33,7 +36,6 @@ export const Menu = () => {
 		}, [ref]);
 	}
 
-	// Functions
 	useEffect(() => {
 		window.addEventListener("resize", () => {
 			setMobile(window.innerWidth);
@@ -42,7 +44,7 @@ export const Menu = () => {
 
 	// Rendering
 	return (
-		<>
+		<MenuContext.Provider value={{ openedMenu, setOpenedMenu }}>
 			{mobile < 768 && (
 				<HamburgerBtn title="Abrir menu" onClick={() => setOpenedMenu(true)} />
 			)}
@@ -55,6 +57,6 @@ export const Menu = () => {
 				<MenuItem link="css" text="CSS" />
 				<MenuItem link="react" text="React" />
 			</MenuS>
-		</>
+		</MenuContext.Provider>
 	);
 };

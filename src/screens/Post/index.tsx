@@ -23,7 +23,7 @@ export const Post = () => {
 	// Rendering
 	return (
 		<PostS>
-			<ImageS src={postData?.img} />
+			<ImageS src={postData?.img} title={postData?.title} />
 			<TitleS>{postData?.title}</TitleS>
 			<DescriptionS>{postData?.description}</DescriptionS>
 		</PostS>

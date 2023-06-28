@@ -4,7 +4,7 @@ import styled from "styled-components";
 // Styled Components
 export const HamburgerContainer = styled.div``;
 
-export const HamburgerIcon = styled.div`
+export const HamburgerIcon = styled.img`
 	width: 1.5rem;
 	cursor: pointer;
 
