@@ -11,7 +11,7 @@ export const Header = () => {
 	return (
 		<HeaderS>
 			<HeaderContent>
-				<Logo href="">BlogC</Logo>
+				<Logo to="/">BlogC</Logo>
 				<Input placeholder="Procurar notícias" />
 				<Menu />
 			</HeaderContent>
