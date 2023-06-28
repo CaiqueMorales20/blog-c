@@ -26,16 +26,5 @@ export const MenuS = styled.ul<MenuProps>`
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-
-		// Position of HamburgerBtn
-		& > *:first-child {
-			position: absolute;
-			top: 0;
-			right: 10vw;
-			height: var(--header-height);
-
-			display: flex;
-			align-items: center;
-		}
 	}
 `;

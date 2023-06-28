@@ -13,8 +13,8 @@ export const InputContainer = styled.div`
 	}
 `;
 
-export const InputIcon = styled.div`
-	width: 1.25rem;
+export const InputIcon = styled.img`
+	width: 1rem;
 	color: #e2d8d8;
 	transform: translateX(1em);
 	position: absolute;

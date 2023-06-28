@@ -36,6 +36,7 @@ export const Menu = () => {
 		}, [ref]);
 	}
 
+	// Functions
 	useEffect(() => {
 		window.addEventListener("resize", () => {
 			setMobile(window.innerWidth);
