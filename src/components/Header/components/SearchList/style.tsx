@@ -11,4 +11,15 @@ export const SearchListS = styled.div`
 	border-radius: 1rem;
 	padding: 1em;
 	z-index: 9999;
+
+	@media screen and (max-width: 768px) {
+		margin-left: -10%;
+		margin-right: -20%;
+		width: 160%;
+	}
+`;
+
+export const TextS = styled.p`
+	color: #cacaca;
+	font-size: 0.9rem;
 `;

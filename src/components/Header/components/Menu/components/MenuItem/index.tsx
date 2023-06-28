@@ -6,13 +6,13 @@ import { MenuItemS, MenuLink } from "./style";
 import { MenuItemProps } from "./types";
 
 // Context
-import { MenuContext } from "../..";
-import { MenuContextProps } from "../../types";
+import { HeaderContext } from "../../../..";
+import { HeaderContextProps } from "../../../../types";
 
 // Functional Component
 export const MenuItem = (props: MenuItemProps) => {
 	// Variables
-	const { setOpenedMenu } = useContext(MenuContext) as MenuContextProps;
+	const { setOpenedMenu } = useContext(HeaderContext) as HeaderContextProps;
 
 	// Rendering
 	return (

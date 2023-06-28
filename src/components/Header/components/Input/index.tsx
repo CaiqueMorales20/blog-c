@@ -1,21 +1,40 @@
-// Types
-import { InputProps } from "../../types";
+// Imports
+import { useContext, useEffect } from "react";
+
+// Imported Components
+import { SearchList } from "../SearchList";
 
 // Styled Components
 import { InputContainer, InputIcon, InputS } from "./style";
 
 // Images
 import SearchIcon from "../../../../assets/img/header/search_icon.png";
-import { SearchList } from "../SearchList";
+
+// Types
+import { InputProps } from "../../types";
+
+// Context
+import { HeaderContext } from "../..";
+import { HeaderContextProps } from "../../types";
 
 // Functional Component
 export const Input = (props: InputProps) => {
+	// Variables
+	const { search, setSearch } = useContext(HeaderContext) as HeaderContextProps;
+
+	useEffect(() => {
+		console.log(search);
+	}, [search]);
+
 	// Rendering
 	return (
 		<InputContainer title="Buscar">
 			<InputIcon src={SearchIcon} alt="Buscar" />
-			<InputS placeholder={props.placeholder} />
-			<SearchList />
+			<InputS
+				onChange={(e: any) => setSearch(e.currentTarget.value)}
+				placeholder={props.placeholder}
+			/>
+			{search.length > 0 && <SearchList />}
 		</InputContainer>
 	);
 };

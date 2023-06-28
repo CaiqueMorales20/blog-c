@@ -25,7 +25,7 @@ export const NewsData = [
 		id: 3,
 	},
 	{
-		title: "Focando em patterns no React",
+		title: "Seletores CSS",
 		description:
 			"Patterns no React são abordagens e práticas de desenvolvimento que fornecem estrutura e consistência ao código. Eles desempenham um papel crucial na construção de aplicativos React escaláveis e de fácil manutenção, promovendo a reutilização de componentes, separação de preocupações e legibilidade do código.",
 		img: bg1,
