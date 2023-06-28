@@ -14,10 +14,11 @@ export const TitleS = styled.h1`
 `;
 
 export const ImageS = styled.img`
-	width: 40rem;
+	width: min(100%, 40rem);
 `;
 
 export const DescriptionS = styled.p`
-	width: 40rem;
+	width: min(100%, 40rem);
 	color: #cacaca;
+	text-align: justify;
 `;
