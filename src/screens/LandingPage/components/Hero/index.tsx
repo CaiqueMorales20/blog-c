@@ -25,7 +25,8 @@ export const Hero = () => {
 						<Card
 							title={item.title}
 							description={item.description}
-							bg={item.bg}
+							img={item.img}
+							id={item.id}
 							key={index}
 						/>
 					);

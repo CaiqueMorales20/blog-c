@@ -1,9 +1,12 @@
 // Imports
 import styled from "styled-components";
 
+// Imported Components
+import { Link } from "react-router-dom";
+
 // Styled Components
 
-export const CardS = styled.a`
+export const CardS = styled(Link)`
 	background: #cacaca;
 	color: #262626;
 	z-index: 2;

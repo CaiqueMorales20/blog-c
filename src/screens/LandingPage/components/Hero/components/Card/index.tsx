@@ -8,7 +8,10 @@ import { CardProps } from "./types";
 export const Card = (props: CardProps) => {
 	// Rendering
 	return (
-		<CardS href="" style={{ backgroundImage: `url(${props.bg})` }}>
+		<CardS
+			to={`/post/${props.id}`}
+			style={{ backgroundImage: `url(${props.img})` }}
+		>
 			<CardText>
 				<CardTitle>{props.title}</CardTitle>
 				<CardDescription>{props.description}</CardDescription>

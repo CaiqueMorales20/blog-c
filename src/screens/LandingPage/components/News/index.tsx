@@ -18,7 +18,7 @@ export const News = () => {
 					// Rendering
 					return (
 						<NewsCard
-							img={item.bg}
+							img={item.img}
 							name={item.title}
 							id={item.id}
 							key={index}

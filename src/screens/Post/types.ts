@@ -1,5 +1,9 @@
 // Types
-export type CardProps = {
+export type PostParams = {
+	postId: string;
+};
+
+export type PostProps = {
 	title: string;
 	description: string;
 	img: string;
