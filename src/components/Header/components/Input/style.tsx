@@ -18,6 +18,7 @@ export const InputIcon = styled.img`
 	color: #e2d8d8;
 	transform: translateX(1em);
 	position: absolute;
+	z-index: 3;
 
 	@media screen and (max-width: 768px) {
 		position: inherit;
@@ -31,6 +32,7 @@ export const InputS = styled.input`
 	height: 2.5rem;
 	padding-inline: 3em 2em;
 	width: 100%;
+	z-index: 2;
 
 	&::placeholder {
 		font-size: 0.8;
