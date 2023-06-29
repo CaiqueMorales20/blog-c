@@ -22,10 +22,6 @@ export const Input = (props: InputProps) => {
 	// Variables
 	const { search, setSearch } = useContext(HeaderContext) as HeaderContextProps;
 
-	useEffect(() => {
-		console.log(search);
-	}, [search]);
-
 	// Rendering
 	return (
 		<InputContainer title="Buscar">

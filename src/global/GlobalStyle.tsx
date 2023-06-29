@@ -1,5 +1,6 @@
 // Imports
 import { createGlobalStyle } from "styled-components";
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 // Global Style
@@ -41,6 +42,10 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
   }
+  html,body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
   body{
     background-color: #292d35;
   }
@@ -72,4 +77,15 @@ export const GlobalStyle = createGlobalStyle`
 export const PageContainer = styled.main`
 	width: min(1440px, 80%);
 	margin-inline: auto;
+`;
+
+export const PageTransion = styled(motion.div)`
+	height: 100vh;
+	width: 150vw;
+	background-color: #363c47;
+	background: linear-gradient(90deg, #292d35 30%, #363c47 70%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
 `;
