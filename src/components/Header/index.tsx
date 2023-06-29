@@ -26,7 +26,7 @@ export const Header = () => {
 			<HeaderS>
 				<HeaderContent>
 					<Logo to="/">BlogC</Logo>
-					<Input placeholder="Procurar notícias" />
+					<Input placeholder="Procurar" />
 					<Menu />
 				</HeaderContent>
 			</HeaderS>

@@ -22,6 +22,7 @@ export const InputIcon = styled.img`
 
 	@media screen and (max-width: 768px) {
 		position: inherit;
+		width: 0.8rem;
 	}
 `;
 
@@ -35,13 +36,20 @@ export const InputS = styled.input`
 	z-index: 2;
 
 	&::placeholder {
-		font-size: 0.8;
+		font-size: 0.8rem;
 		color: #efefef;
 		opacity: 0.5;
 		letter-spacing: 0.5px;
 	}
 
 	@media screen and (max-width: 768px) {
-		display: none;
+		margin-left: -1em;
+
+		&::placeholder {
+			font-size: 0.7rem;
+			color: #efefef;
+			opacity: 0.5;
+			letter-spacing: 0.5px;
+		}
 	}
 `;

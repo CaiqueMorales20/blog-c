@@ -17,4 +17,7 @@ export const TextS = styled(Link)`
 	width: 100%;
 	color: #cacaca;
 	font-size: 0.9rem;
+	&:hover {
+		opacity: 0.3;
+	}
 `;

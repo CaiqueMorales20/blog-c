@@ -19,6 +19,10 @@ export const HeaderContent = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	gap: 2em;
+
+	@media screen and (max-width: 768px) {
+		gap: 1.75em;
+	}
 `;
 
 export const Logo = styled(Link)`
