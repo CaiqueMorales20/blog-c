@@ -1,6 +1,7 @@
 // Imports
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { motion } from "framer-motion";
 
 // Styled Components
 import { DescriptionS, ImageS, PostS, TitleS } from "./style";
@@ -22,10 +23,12 @@ export const Post = () => {
 
 	// Rendering
 	return (
-		<PostS>
-			<ImageS src={postData?.img} title={postData?.title} />
-			<TitleS>{postData?.title}</TitleS>
-			<DescriptionS>{postData?.description}</DescriptionS>
-		</PostS>
+		<motion.div animate={{ x: 200 }}>
+			<PostS>
+				<ImageS src={postData?.img} title={postData?.title} />
+				<TitleS>{postData?.title}</TitleS>
+				<DescriptionS>{postData?.description}</DescriptionS>
+			</PostS>
+		</motion.div>
 	);
 };
