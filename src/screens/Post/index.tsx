@@ -11,7 +11,7 @@ import { PostParams, PostProps } from "./types";
 
 // Utils
 import fetchPost from "../../utils/fetchPost";
-import { PageTransion } from "../../global/GlobalStyle";
+import { PageTransition } from "../../global/GlobalStyle";
 
 // Functional Component
 export const Post = () => {
@@ -25,11 +25,7 @@ export const Post = () => {
 	// Rendering
 	return (
 		<>
-			<PageTransion
-				initial={{ x: "0vw" }}
-				animate={{ x: "-150vw" }}
-				transition={{ duration: 0.1 }}
-			/>
+			<PageTransition />
 			<PostS>
 				<ImageS src={postData?.img} title={postData?.title} />
 				<TitleS>{postData?.title}</TitleS>

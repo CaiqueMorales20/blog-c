@@ -79,9 +79,9 @@ export const PageContainer = styled.main`
 	margin-inline: auto;
 `;
 
-export const PageTransion = styled(motion.div)`
+export const PageTransitionS = styled(motion.div)`
 	height: 100vh;
-	width: 150vw;
+	width: 200vw;
 	background-color: #363c47;
 	background: linear-gradient(90deg, #292d35 30%, #363c47 70%);
 	position: fixed;
@@ -89,3 +89,15 @@ export const PageTransion = styled(motion.div)`
 	left: 0;
 	z-index: 9999;
 `;
+
+// Functional Components
+export const PageTransition = () => {
+	// Rendering
+	return (
+		<PageTransitionS
+			initial={{ x: "0vw" }}
+			animate={{ x: "-200vw" }}
+			transition={{ duration: 0.1 }}
+		/>
+	);
+};
