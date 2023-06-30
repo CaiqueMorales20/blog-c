@@ -4,6 +4,8 @@ import { SearchItemS, TextS } from "./style";
 
 // Types
 import { SearchItemProps } from "./type";
+
+// Context
 import { HeaderContext } from "../../..";
 import { HeaderContextProps } from "../../../types";
 

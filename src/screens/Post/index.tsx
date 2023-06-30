@@ -1,7 +1,6 @@
 // Imports
-import { useState } from "react";
-import { useParams } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
 
 // Styled Components
 import { DescriptionS, ImageS, PostS, TitleS } from "./style";
@@ -17,15 +16,20 @@ import { PageTransition } from "../../global/GlobalStyle";
 export const Post = () => {
 	// Variables
 	const [postData, setPostData] = useState<PostProps>();
+	const location = useLocation();
+	const [reloadAnimation, setReloadAnimation] = useState(true);
 	const { postId } = useParams<PostParams>();
-
-	// Functions
 	fetchPost(postId, setPostData);
+
+	useEffect(() => {
+		setReloadAnimation(!reloadAnimation);
+	}, [location]);
 
 	// Rendering
 	return (
 		<>
-			<PageTransition />
+			{reloadAnimation && <PageTransition />}
+			{!reloadAnimation && <PageTransition />}
 			<PostS>
 				<ImageS src={postData?.img} title={postData?.title} />
 				<TitleS>{postData?.title}</TitleS>

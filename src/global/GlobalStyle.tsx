@@ -2,6 +2,7 @@
 import { createGlobalStyle } from "styled-components";
 import { motion } from "framer-motion";
 import styled from "styled-components";
+import { PageTransitionProps } from "./GlobalStyle.type";
 
 // Global Style
 export const GlobalStyle = createGlobalStyle`
@@ -82,8 +83,8 @@ export const PageContainer = styled.main`
 export const PageTransitionS = styled(motion.div)`
 	height: 100vh;
 	width: 200vw;
-	background-color: #363c47;
-	background: linear-gradient(90deg, #292d35 30%, #363c47 70%);
+	/* background: linear-gradient(90deg, #292d35 30%, #363c47 70%); */
+	background-color: #343945;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -91,13 +92,18 @@ export const PageTransitionS = styled(motion.div)`
 `;
 
 // Functional Components
-export const PageTransition = () => {
+export const PageTransition = (props: PageTransitionProps) => {
 	// Rendering
 	return (
 		<PageTransitionS
 			initial={{ x: "0vw" }}
-			animate={{ x: "-200vw" }}
-			transition={{ duration: 0.1 }}
+			animate={props.reversed ? { x: "200vw" } : { x: "-200vw" }}
+			transition={{
+				duration: 0.5,
+				bounceDamping: 0,
+				delay: 0,
+				restSpeed: 0.4,
+			}}
 		/>
 	);
 };
