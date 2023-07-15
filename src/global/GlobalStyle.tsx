@@ -99,7 +99,7 @@ export const PageTransition = (props: PageTransitionProps) => {
 			initial={{ x: "0vw" }}
 			animate={props.reversed ? { x: "200vw" } : { x: "-200vw" }}
 			transition={{
-				duration: 0.5,
+				duration: 0.2,
 				bounceDamping: 0,
 				delay: 0,
 				restSpeed: 0.4,
