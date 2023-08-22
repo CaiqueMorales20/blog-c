@@ -2,27 +2,27 @@
 export default function Header() {
   // Rendering
   return (
-    <header className="bg-primary relative z-50">
+    <header className="relative z-50 bg-primary">
       <nav className="m-auto flex h-20 w-[90%] items-center justify-between">
-        <h1 className="hover:text-accent text-white duration-300">Blog C</h1>
+        <h1 className="text-white duration-300 hover:text-accent">Blog C</h1>
         <ul className="flex gap-6">
           <li>
-            <a href="#" className="hover:text-accent text-white duration-300">
+            <a href="#" className="text-white duration-300 hover:text-accent">
               Home
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-accent text-white duration-300">
+            <a href="#" className="text-white duration-300 hover:text-accent">
               CSS
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-accent text-white duration-300">
+            <a href="#" className="text-white duration-300 hover:text-accent">
               React
             </a>
           </li>
           <li>
-            <a href="#" className="hover:text-accent text-white duration-300">
+            <a href="#" className="text-white duration-300 hover:text-accent">
               Next
             </a>
           </li>
