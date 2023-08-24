@@ -1,5 +1,6 @@
 // Imported Components
 import Hero from './Hero'
+import Main from './Main'
 
 // Functional Component
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <Main />
     </div>
   )
 }
