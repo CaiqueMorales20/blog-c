@@ -1,3 +1,4 @@
+// Imported Components
 import Image from 'next/image'
 
 // Functional Component

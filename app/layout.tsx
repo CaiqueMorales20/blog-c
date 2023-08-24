@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Caique Morales', url: 'https://caiquemorales.com/' }],
   publisher: 'Vercel',
   keywords:
-    'Insufilm, Proteção solar, Aplicação de insulfilm, Projetos, Privacidade, benefícios',
+    'dicas, programaçãp, css, react, next, javascript, nextjs, reactjs, nextjs,',
   alternates: {
     canonical: 'https://blog-c-five.vercel.app/',
   },
