@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="cursor-pointer overflow-hidden rounded-2xl duration-300 hover:scale-[1.02] md:col-span-2 md:row-span-2">
           <Image
             className="h-full object-cover"
-            src="/thumb.jpg"
+            src="/posts/css-thumb.jpg"
             title="CSS"
             alt="CSS"
             width={4000}
@@ -20,7 +20,7 @@ export default function Hero() {
         <div className="cursor-pointer overflow-hidden rounded-2xl duration-300 hover:scale-[1.02] ">
           <Image
             className="h-full object-cover"
-            src="/thumb.jpg"
+            src="/posts/react-thumb.jpg"
             title="CSS"
             alt="CSS"
             width={4000}
@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="cursor-pointer overflow-hidden rounded-2xl duration-300 hover:scale-[1.02] ">
           <Image
             className="h-full object-cover"
-            src="/thumb.jpg"
+            src="/posts/html-thumb.jpg"
             title="CSS"
             alt="CSS"
             width={4000}
