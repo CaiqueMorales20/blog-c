@@ -1,4 +1,5 @@
-import Link from "next/link";
+// Imported Components
+import Link from 'next/link'
 
 // Functional Component
 export default function Header() {
@@ -6,30 +7,34 @@ export default function Header() {
   return (
     <header className="relative z-50 bg-primary">
       <nav className="m-auto flex h-20 w-[90%] items-center justify-between">
-        <h1 className="text-white duration-300 hover:text-accent">Blog C</h1>
+        <Link href="/">
+          <h1 className="text-base font-bold text-white duration-300 hover:text-accent">
+            Dev Tricks
+          </h1>
+        </Link>
         <ul className="flex gap-6">
           <li>
-            <Link 
+            <Link
               href="/"
-              className="text-white duration-300 hover:text-accent"
+              className="text-sm text-white duration-300 hover:text-accent"
               title="Navegar para Home"
             >
               Home
             </Link>
           </li>
           <li>
-            <Link 
+            <Link
               href="/css"
-              className="text-white duration-300 hover:text-accent"
+              className="text-sm text-white duration-300 hover:text-accent"
               title="Navegar para CSS"
             >
               CSS
             </Link>
           </li>
           <li>
-            <Link 
+            <Link
               href="/react"
-              className="text-white duration-300 hover:text-accent"
+              className="text-sm text-white duration-300 hover:text-accent"
               title="Navegar para React"
             >
               React

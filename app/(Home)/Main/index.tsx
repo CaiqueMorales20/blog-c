@@ -11,7 +11,7 @@ export default function Main() {
       <div className="grid w-full  grid-cols-1 gap-6 pb-24 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {/* Rendering Posts */}
         {postData.map((post, index) => (
-          <Post title={post.title} tech={post.tech} key={index} />
+          <Post id={post.id} title={post.title} tech={post.tech} key={index} />
         ))}
       </div>
     </main>
