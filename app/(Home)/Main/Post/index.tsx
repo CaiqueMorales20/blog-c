@@ -11,7 +11,7 @@ export type PostType = {
 export default function Post(props: PostType) {
   // Rendering
   return (
-    <div className="cursor-pointer overflow-hidden rounded-2xl duration-300 ease-in-out hover:scale-90">
+    <div className="cursor-pointer drop-shadow-lg overflow-hidden rounded-2xl duration-300 ease-in-out hover:scale-90">
       <Image src="/thumb.jpg" alt="Post" width={500} height={500} />
       <div className="flex min-h-full flex-col gap-2 bg-white px-8 py-4">
         <h2 className="text-sm font-bold text-primary">{props.title}</h2>
@@ -21,7 +21,7 @@ export default function Post(props: PostType) {
               <>
                 {tech === 'HTML' && (
                   <div
-                    key={index}
+                    key={`html ${index}`}
                     className="w-max rounded-lg bg-red-500 px-2 py-1"
                   >
                     <h3 className="text-xs text-white">{tech}</h3>
