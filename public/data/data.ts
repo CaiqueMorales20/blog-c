@@ -6,78 +6,47 @@ export const postData = [
     tech: ['HTML', 'CSS'],
     content: {
       title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte',
-    },
-  },
-  {
-    id: '2',
-    title: 'Seletores CSS',
-    tech: ['React', 'Styled Components'],
-    content: {
-      title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte',
-    },
-  },
-  {
-    id: '3',
-    title: 'Next + Tailwind',
-    tech: ['Next', 'Tailwind'],
-    content: {
-      title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte',
-    },
-  },
-  {
-    id: '4',
-    title: 'React + CSS',
-    tech: ['React', 'CSS'],
-    content: {
-      title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte',
-    },
-  },
-  {
-    id: '5',
-    title: 'CSS to Styled Components',
-    tech: ['CSS', 'Styled Components'],
-    content: {
-      title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte',
-    },
-  },
-  {
-    id: '6',
-    title: 'React + Styled Components',
-    tech: ['React', 'Styled Components'],
-    content: {
-      title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte',
-    },
-  },
-  {
-    id: '7',
-    title: 'React Trick',
-    tech: ['React'],
-    content: {
-      title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte.',
-    },
-  },
-  {
-    id: '8',
-    title: 'Seletores CSS',
-    tech: ['HTML', 'CSS'],
-    content: {
-      title: 'Flexbox',
-      description:
-        'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Voce vai acabar por usa-lá em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas é algo que falarei em um post aparte',
+      description: [
+        {
+          type: 'text',
+          content:
+            'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Você vai acabar por usa-lo em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas isso é algo que falarei em um post aparte.',
+        },
+        {
+          type: 'text',
+          content: 'Para podermos entender melhor vamos partir para o código.',
+        },
+        {
+          type: 'text',
+          content: 'Primeiro crie o seguinte template no seu index.html:',
+        },
+        {
+          type: 'image',
+          content: '/classes/class_01/code-1.png',
+        },
+        {
+          type: 'text',
+          content:
+            'Em seguida, altere crie um arquivo style.css com o seguinte código e faça as devidas alterações no index.html:',
+        },
+        {
+          type: 'image',
+          content: '/classes/class_01/code-2.png',
+        },
+        {
+          type: 'image',
+          content: '/classes/class_01/code-3.png',
+        },
+        {
+          type: 'text',
+          content:
+            'Se tudo ocorreu certo, ao visualizar o arquivo, a seguinte tela deve ser renderizada:',
+        },
+        {
+          type: 'image',
+          content: '/classes/class_01/code-4.png',
+        },
+      ],
     },
   },
 ]

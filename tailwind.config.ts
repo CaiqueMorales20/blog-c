@@ -21,6 +21,11 @@ const config: Config = {
         xl: ['clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem)', '1.3'],
         '2xl': 'clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem)',
       },
+      backgroundImage: {
+        wave: "url('/pattern/wave.svg')",
+        wave2: "url('/pattern/wave-2.svg')",
+        blob: "url('/pattern/blob.svg')",
+      },
     },
   },
   plugins: [],

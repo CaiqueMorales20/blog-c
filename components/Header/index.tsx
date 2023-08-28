@@ -9,14 +9,14 @@ export default function Header() {
       <nav className="m-auto flex h-20 w-[90%] items-center justify-between">
         <Link href="/">
           <h1 className="text-base font-bold text-white duration-300 hover:text-accent">
-            Dev Tricks
+            Dev Trick
           </h1>
         </Link>
         <ul className="flex gap-6">
           <li>
             <Link
               href="/"
-              className="text-sm text-white duration-300 hover:text-accent"
+              className="text-sm font-bold text-white duration-300 hover:text-accent"
               title="Navegar para Home"
             >
               Home
@@ -25,7 +25,7 @@ export default function Header() {
           <li>
             <Link
               href="/css"
-              className="text-sm text-white duration-300 hover:text-accent"
+              className="text-sm font-bold text-white duration-300 hover:text-accent"
               title="Navegar para CSS"
             >
               CSS
@@ -34,7 +34,7 @@ export default function Header() {
           <li>
             <Link
               href="/react"
-              className="text-sm text-white duration-300 hover:text-accent"
+              className="text-sm font-bold text-white duration-300 hover:text-accent"
               title="Navegar para React"
             >
               React

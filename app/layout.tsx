@@ -33,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <div className="bg-secondary px-[5%]">{children}</div>
+        <div className="">{children}</div>
       </body>
     </html>
   )
