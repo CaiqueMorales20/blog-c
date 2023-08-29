@@ -16,7 +16,7 @@ export default function Header() {
           <li>
             <Link
               href="/"
-              className="text-sm font-bold text-white duration-300 hover:text-accent"
+              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white/90 hover:text-accent"
               title="Navegar para Home"
             >
               Home
@@ -25,7 +25,7 @@ export default function Header() {
           <li>
             <Link
               href="/css"
-              className="text-sm font-bold text-white duration-300 hover:text-accent"
+              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white/90 hover:text-accent"
               title="Navegar para CSS"
             >
               CSS
@@ -34,7 +34,7 @@ export default function Header() {
           <li>
             <Link
               href="/react"
-              className="text-sm font-bold text-white duration-300 hover:text-accent"
+              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white/90 hover:text-accent"
               title="Navegar para React"
             >
               React
