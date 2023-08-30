@@ -9,7 +9,7 @@ export default function Trick({ params }: { params: { id: string } }) {
 
   // Rendering
   return (
-    <div className="bg-wave2 -mt-[5rem] min-h-[100vh] bg-cover px-[5%] py-[5rem]">
+    <div className="-mt-[5rem] min-h-[100vh] bg-wave2 bg-cover px-[5%] py-[5rem]">
       <div className="mt-20 flex flex-col gap-10 rounded-xl bg-white p-10 text-justify shadow-sm md:w-2/3">
         <h1 className="text-lg font-bold text-accent">{post?.content.title}</h1>
         {/* Mapping Description */}
