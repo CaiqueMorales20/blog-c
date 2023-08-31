@@ -8,7 +8,7 @@ export default function Header() {
     <header className="relative z-50 bg-primary">
       <nav className="m-auto flex h-20 w-[90%] items-center justify-between">
         <Link href="/">
-          <h1 className="text-base font-bold text-white duration-300 hover:text-accent">
+          <h1 className="rounded-lg p-2 text-base font-bold text-white duration-300 hover:bg-white hover:text-accent">
             Dev Trick
           </h1>
         </Link>
@@ -16,7 +16,7 @@ export default function Header() {
           <li>
             <Link
               href="/"
-              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white/90 hover:text-accent"
+              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white hover:text-accent"
               title="Navegar para Home"
             >
               Home
@@ -25,7 +25,7 @@ export default function Header() {
           <li>
             <Link
               href="/css"
-              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white/90 hover:text-accent"
+              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white hover:text-accent"
               title="Navegar para CSS"
             >
               CSS
@@ -34,7 +34,7 @@ export default function Header() {
           <li>
             <Link
               href="/react"
-              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white/90 hover:text-accent"
+              className="rounded-lg p-2 text-sm font-bold text-white duration-300 hover:bg-white hover:text-accent"
               title="Navegar para React"
             >
               React

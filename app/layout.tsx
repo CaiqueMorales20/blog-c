@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 // SEO
 export const metadata: Metadata = {
-  title: 'Blog C - Dicas para Melhorar seu CSS, React e Next ',
+  title: 'Dev Trick - Dicas para Melhorar seu CSS, React e Next ',
   robots: 'index, follow',
   description:
     'Aprenda dicas valiosas para aprimorar suas habilidades em CSS, React e Next.js. Este blog oferece insights e orientações para melhorar sua prática de desenvolvimento web.',
