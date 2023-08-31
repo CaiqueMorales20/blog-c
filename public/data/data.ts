@@ -1,6 +1,21 @@
 // Data
 export const postData = [
   {
+    id: '2',
+    title: 'HTML Semântico',
+    tech: ['HTML'],
+    content: {
+      title: 'HTML Semântico e seus benefícios',
+      description: [
+        {
+          type: 'text',
+          content:
+            'Flexbox basicamente é o que vai trazer a responsividade pro seu site. Você vai acabar por usa-lo em 80%, das vezes em que tiver fazendo um layout, nos outros 20% fará uso do "grid", mas isso é algo que falarei em um post aparte.',
+        },
+      ],
+    },
+  },
+  {
     id: '1',
     title: 'Flexbox',
     tech: ['HTML', 'CSS'],
