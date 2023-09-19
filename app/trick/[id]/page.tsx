@@ -34,6 +34,13 @@ export default function Trick({ params }: { params: { id: string } }) {
                 />
               )
             }
+            if (desc.type === 'code') {
+              return (
+                <pre className='bg-gray-800 p-10 text-white rounded-lg'>
+                  <code  children={desc.content}  />
+                </pre>
+              )
+            }
             return <div key={`error, ${index}`}>Error</div>
           })}
         </div>

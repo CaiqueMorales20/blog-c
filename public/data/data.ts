@@ -45,6 +45,27 @@ export const postData = [
             'Em seguida, altere crie um arquivo style.css com o seguinte código e faça as devidas alterações no index.html:',
         },
         {
+          type: 'code',
+          content: `class HelloMessage extends React.Component {
+  handlePress = () => {
+    alert('Hello')
+  }
+  render() {
+    return (
+      <div>
+        <p>Hello {this.props.name}</p>
+        <button onClick={this.handlePress}>Say Hello</button>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />, 
+  mountNode 
+);`,
+        },
+        {
           type: 'image',
           content: '/classes/class_01/code-2.png',
         },
